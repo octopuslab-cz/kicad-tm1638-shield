@@ -1,0 +1,821 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 12284 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2350 6000 2350 6200
+Text Label 2350 6000 0    10   ~ 0
++3V3
+Wire Wire Line
+	2350 3700 2350 3500
+Text Label 2350 3700 0    10   ~ 0
++3V3
+Wire Wire Line
+	3450 1000 3150 1000
+Wire Wire Line
+	3150 1000 3150 900 
+Wire Wire Line
+	2150 6000 2150 6200
+Text Label 2150 6000 0    10   ~ 0
+GND
+Wire Wire Line
+	3450 1200 3150 1200
+Wire Wire Line
+	3150 1200 3150 1300
+Wire Wire Line
+	2150 3700 2150 3500
+Text Label 2150 3700 0    10   ~ 0
+GND
+Wire Wire Line
+	2150 1000 2400 1000
+Wire Wire Line
+	1950 6000 1950 6200
+Text Label 1950 6000 0    10   ~ 0
++5V
+Wire Wire Line
+	1950 3700 1950 3500
+Text Label 1950 3700 0    10   ~ 0
++5V
+Wire Wire Line
+	2000 1100 2000 900 
+Text Label 2850 5500 0    50   ~ 0
+SPI_MISO
+Text Label 2850 2800 0    50   ~ 0
+SPI_CS-L
+Wire Wire Line
+	2650 5000 2850 5000
+Text Label 2850 5000 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	2650 2500 2850 2500
+Text Label 2850 2500 0    50   ~ 0
+I2C_SCL
+Text Label 2850 5700 0    50   ~ 0
+SPI_SCLK
+Text Label 2850 3200 0    50   ~ 0
+SPI_SCLK-L
+Text Label 2850 5300 0    50   ~ 0
+SPI_MOSI
+Text Label 2850 3000 0    50   ~ 0
+SPI_MOSI-L
+Wire Wire Line
+	2650 4800 2850 4800
+Text Label 2850 4800 0    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	2650 2300 2850 2300
+Text Label 2850 2300 0    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	1650 4800 1450 4800
+Wire Wire Line
+	1650 5000 1450 5000
+Wire Wire Line
+	1650 5200 1450 5200
+Wire Wire Line
+	1650 5400 1450 5400
+Wire Wire Line
+	1650 2300 1450 2300
+Wire Wire Line
+	1650 2500 1450 2500
+Wire Wire Line
+	1650 2700 1450 2700
+Wire Wire Line
+	1650 2900 1450 2900
+Wire Wire Line
+	3450 1100 3150 1100
+Text Label 3150 1100 2    50   ~ 0
+DEV1
+Wire Wire Line
+	2400 1200 2000 1200
+Text Label 2000 1200 2    50   ~ 0
+PWM1
+$Comp
+L TM1638Shield1-eagle-import:+5V #P+02
+U 1 1 637B3A6A
+P 1950 6300
+F 0 "#P+02" H 1950 6300 50  0001 C CNN
+F 1 "+5V" V 2100 6150 59  0000 L BNN
+F 2 "" H 1950 6300 50  0001 C CNN
+F 3 "" H 1950 6300 50  0001 C CNN
+	1    1950 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:GND #GND07
+U 1 1 C2693486
+P 2150 6300
+F 0 "#GND07" H 2150 6300 50  0001 C CNN
+F 1 "GND" H 2050 6200 59  0000 L BNN
+F 2 "" H 2150 6300 50  0001 C CNN
+F 3 "" H 2150 6300 50  0001 C CNN
+	1    2150 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:+3V3 #+3V07
+U 1 1 A67731B0
+P 2350 6300
+F 0 "#+3V07" H 2350 6300 50  0001 C CNN
+F 1 "+3V3" V 2250 6100 59  0000 L BNN
+F 2 "" H 2350 6300 50  0001 C CNN
+F 3 "" H 2350 6300 50  0001 C CNN
+	1    2350 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:PINHD-1X4 JP3
+U 1 1 8182258E
+P 7800 4700
+F 0 "JP3" H 7550 5025 59  0000 L BNN
+F 1 "PINHD-1X4" H 7550 4400 59  0000 L BNN
+F 2 "TM1638Shield1:1X04" H 7800 4700 50  0001 C CNN
+F 3 "" H 7800 4700 50  0001 C CNN
+	1    7800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:OCTOBUSFULL U$1
+U 1 1 89E33A62
+P 2150 5400
+F 0 "U$1" H 2150 5400 50  0001 C CNN
+F 1 "OCTOBUSFULL" H 2150 5400 50  0001 C CNN
+F 2 "TM1638Shield1:OCTOBUS" H 2150 5400 50  0001 C CNN
+F 3 "" H 2150 5400 50  0001 C CNN
+	1    2150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:PINHD-1X3 DEV1
+U 1 1 9DCBA177
+P 3550 1100
+F 0 "DEV1" H 3300 1325 59  0000 L BNN
+F 1 "PINHD-1X3" H 3300 800 59  0000 L BNN
+F 2 "TM1638Shield1:1X03" H 3550 1100 50  0001 C CNN
+F 3 "" H 3550 1100 50  0001 C CNN
+	1    3550 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:GND #GND021
+U 1 1 FF2A2D77
+P 3150 1400
+F 0 "#GND021" H 3150 1400 50  0001 C CNN
+F 1 "GND" H 3050 1300 59  0000 L BNN
+F 2 "" H 3150 1400 50  0001 C CNN
+F 3 "" H 3150 1400 50  0001 C CNN
+	1    3150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:OCTOBUS_DISP U$4
+U 1 1 649D799B
+P 1850 3400
+F 0 "U$4" H 1850 3400 50  0001 C CNN
+F 1 "OCTOBUS_DISP" H 1850 3400 50  0001 C CNN
+F 2 "TM1638Shield1:OCTOBUS_DISP" H 1850 3400 50  0001 C CNN
+F 3 "" H 1850 3400 50  0001 C CNN
+	1    1850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:+5V #P+05
+U 1 1 57F4DC09
+P 1950 3800
+F 0 "#P+05" H 1950 3800 50  0001 C CNN
+F 1 "+5V" V 2150 3600 59  0000 L BNN
+F 2 "" H 1950 3800 50  0001 C CNN
+F 3 "" H 1950 3800 50  0001 C CNN
+	1    1950 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:GND #GND01
+U 1 1 8DA2BB24
+P 2150 3800
+F 0 "#GND01" H 2150 3800 50  0001 C CNN
+F 1 "GND" H 2050 3700 59  0000 L BNN
+F 2 "" H 2150 3800 50  0001 C CNN
+F 3 "" H 2150 3800 50  0001 C CNN
+	1    2150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:+3V3 #+3V01
+U 1 1 7D977A11
+P 2350 3800
+F 0 "#+3V01" H 2350 3800 50  0001 C CNN
+F 1 "+3V3" V 2250 3600 59  0000 L BNN
+F 2 "" H 2350 3800 50  0001 C CNN
+F 3 "" H 2350 3800 50  0001 C CNN
+	1    2350 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:PINHD-1X3 PWM1
+U 1 1 4CFD7A94
+P 2500 1100
+F 0 "PWM1" H 2250 1325 59  0000 L BNN
+F 1 "PINHD-1X3" H 2250 800 59  0000 L BNN
+F 2 "TM1638Shield1:1X03" H 2500 1100 50  0001 C CNN
+F 3 "" H 2500 1100 50  0001 C CNN
+	1    2500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:+5V #P+011
+U 1 1 4D46F757
+P 2000 800
+F 0 "#P+011" H 2000 800 50  0001 C CNN
+F 1 "+5V" V 1900 600 59  0000 L BNN
+F 2 "" H 2000 800 50  0001 C CNN
+F 3 "" H 2000 800 50  0001 C CNN
+	1    2000 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:GND #GND02
+U 1 1 4877C9E2
+P 2000 1400
+F 0 "#GND02" H 2000 1400 50  0001 C CNN
+F 1 "GND" H 1900 1300 59  0000 L BNN
+F 2 "" H 2000 1400 50  0001 C CNN
+F 3 "" H 2000 1400 50  0001 C CNN
+	1    2000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:PINHD-1X2 IO26
+U 1 1 21A89E8F
+P 8050 3000
+F 0 "IO26" H 7800 3225 59  0000 L BNN
+F 1 "PINHD-1X2" H 7800 2800 59  0000 L BNN
+F 2 "TM1638Shield1:1X02" H 8050 3000 50  0001 C CNN
+F 3 "" H 8050 3000 50  0001 C CNN
+	1    8050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:GND #GND03
+U 1 1 21137572
+P 7550 3100
+F 0 "#GND03" H 7550 3100 50  0001 C CNN
+F 1 "GND" H 7450 3000 59  0000 L BNN
+F 2 "" H 7550 3100 50  0001 C CNN
+F 3 "" H 7550 3100 50  0001 C CNN
+	1    7550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:+3V3 #+3V012
+U 1 1 34CFF32A
+P 3150 800
+F 0 "#+3V012" H 3150 800 50  0001 C CNN
+F 1 "+3V3" V 3050 600 59  0000 L BNN
+F 2 "" H 3150 800 50  0001 C CNN
+F 3 "" H 3150 800 50  0001 C CNN
+	1    3150 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:7SEG-4D0.56INCH DISP-R1
+U 1 1 63C62AE7
+P 6250 2650
+F 0 "DISP-R1" V 5375 2450 59  0000 L BNN
+F 1 "7SEG-4D0.56INCH" V 7100 2450 59  0000 L BNN
+F 2 "TM1638Shield1:BQ-MB14RD" H 6250 2650 50  0001 C CNN
+F 3 "" H 6250 2650 50  0001 C CNN
+	1    6250 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 3050 3    50   Input ~ 0
+E
+Text GLabel 4250 3250 3    50   Input ~ 0
+D
+Wire Wire Line
+	4250 3250 4250 3050
+Text GLabel 4350 3050 3    50   Input ~ 0
+DP
+$Comp
+L TM1638Shield1-eagle-import:7SEG-4D0.56INCH DISP-L1
+U 1 1 CE08125E
+P 4450 2650
+F 0 "DISP-L1" V 3575 2450 59  0000 L BNN
+F 1 "7SEG-4D0.56INCH" V 5300 2450 59  0000 L BNN
+F 2 "TM1638Shield1:BQ-MB14RD" H 4450 2650 50  0001 C CNN
+F 3 "" H 4450 2650 50  0001 C CNN
+	1    4450 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4550 3050 3    50   Input ~ 0
+G
+Text GLabel 4450 3250 3    50   Input ~ 0
+C
+Wire Wire Line
+	4450 3250 4450 3050
+Text GLabel 4650 3250 3    50   Input ~ 0
+D4
+Wire Wire Line
+	4650 3250 4650 3050
+Text GLabel 5950 3050 3    50   Input ~ 0
+E
+Text GLabel 6050 3250 3    50   Input ~ 0
+D
+Wire Wire Line
+	6050 3250 6050 3050
+Text GLabel 6150 3050 3    50   Input ~ 0
+DP
+Text GLabel 6350 3050 3    50   Input ~ 0
+G
+Text GLabel 6250 3250 3    50   Input ~ 0
+C
+Wire Wire Line
+	6250 3250 6250 3050
+Wire Wire Line
+	6450 3250 6450 3050
+Text GLabel 6450 3250 3    50   Input ~ 0
+D8
+Text GLabel 4150 2250 1    50   Input ~ 0
+D1
+Text GLabel 4250 2050 1    50   Input ~ 0
+A
+Wire Wire Line
+	4250 2050 4250 2250
+Text GLabel 4350 2250 1    50   Input ~ 0
+F
+Text GLabel 4550 2250 1    50   Input ~ 0
+D3
+Text GLabel 4450 2050 1    50   Input ~ 0
+D2
+Wire Wire Line
+	4450 2050 4450 2250
+Text GLabel 4650 2050 1    50   Input ~ 0
+B
+Wire Wire Line
+	4650 2050 4650 2250
+Text GLabel 5950 2250 1    50   Input ~ 0
+D5
+Text GLabel 6050 2050 1    50   Input ~ 0
+A
+Wire Wire Line
+	6050 2050 6050 2250
+Text GLabel 6150 2250 1    50   Input ~ 0
+F
+Text GLabel 6350 2250 1    50   Input ~ 0
+D7
+Text GLabel 6250 2050 1    50   Input ~ 0
+D6
+Wire Wire Line
+	6250 2050 6250 2250
+Text GLabel 6450 2050 1    50   Input ~ 0
+B
+Wire Wire Line
+	6450 2050 6450 2250
+Text GLabel 5150 5100 0    50   Input ~ 0
+DP
+Text GLabel 5150 5000 0    50   Input ~ 0
+G
+Text GLabel 5150 4900 0    50   Input ~ 0
+F
+Text GLabel 5150 4800 0    50   Input ~ 0
+E
+Text GLabel 5150 4700 0    50   Input ~ 0
+D
+Text GLabel 5150 4600 0    50   Input ~ 0
+C
+Text GLabel 5150 4500 0    50   Input ~ 0
+B
+Text GLabel 5150 4400 0    50   Input ~ 0
+A
+Wire Wire Line
+	6450 4700 6600 4700
+Text GLabel 6600 4700 2    50   Input ~ 0
+D8
+Wire Wire Line
+	6450 4600 6600 4600
+Text GLabel 6600 4600 2    50   Input ~ 0
+D7
+Wire Wire Line
+	6450 4500 6600 4500
+Text GLabel 6600 4500 2    50   Input ~ 0
+D6
+Wire Wire Line
+	6450 4400 6600 4400
+Text GLabel 6600 4400 2    50   Input ~ 0
+D5
+Wire Wire Line
+	6450 4100 6600 4100
+Text GLabel 6600 4100 2    50   Input ~ 0
+D2
+Wire Wire Line
+	6450 4200 6600 4200
+Text GLabel 6600 4200 2    50   Input ~ 0
+D3
+Wire Wire Line
+	6450 4000 6600 4000
+Text GLabel 6600 4000 2    50   Input ~ 0
+D1
+Wire Wire Line
+	6450 4300 6600 4300
+Text GLabel 6600 4300 2    50   Input ~ 0
+D4
+Text GLabel 6450 5600 0    10   BiDi ~ 0
+GND
+Text GLabel 6450 5700 0    10   BiDi ~ 0
+GND2
+$Comp
+L TM1638Shield1-eagle-import:TM1638 IC1
+U 1 1 BCE09641
+P 5750 4900
+F 0 "IC1" H 5350 5925 59  0000 L BNN
+F 1 "TM1638" H 5350 3900 59  0000 L BNN
+F 2 "TM1638Shield1:SOP28" H 5750 4900 50  0001 C CNN
+F 3 "" H 5750 4900 50  0001 C CNN
+	1    5750 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 4800 0    50   Input ~ 0
+DP
+Text GLabel 7450 4700 0    50   Input ~ 0
+G
+Text GLabel 7450 4600 0    50   Input ~ 0
+F
+Text GLabel 7450 4500 0    50   Input ~ 0
+E
+Text GLabel 7450 4000 0    50   Input ~ 0
+D
+Text GLabel 7450 3800 0    50   Input ~ 0
+B
+Wire Wire Line
+	7450 3800 7700 3800
+$Comp
+L TM1638Shield1-eagle-import:PINHD-1X4 JP2
+U 1 1 5EFFB5E1
+P 7800 3900
+F 0 "JP2" H 7550 4225 59  0000 L BNN
+F 1 "PINHD-1X4" H 7550 3600 59  0000 L BNN
+F 2 "TM1638Shield1:1X04" H 7800 3900 50  0001 C CNN
+F 3 "" H 7800 3900 50  0001 C CNN
+	1    7800 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 3900 0    50   Input ~ 0
+C
+Wire Wire Line
+	7450 3900 7700 3900
+Wire Wire Line
+	7450 4000 7700 4000
+Wire Wire Line
+	7450 4500 7700 4500
+Wire Wire Line
+	7450 4600 7700 4600
+Wire Wire Line
+	7450 4700 7700 4700
+Wire Wire Line
+	7450 4800 7700 4800
+$Comp
+L TM1638Shield1-eagle-import:+3V3 #+3V0101
+U 1 1 5F01F122
+P 4100 3700
+F 0 "#+3V0101" H 4100 3700 50  0001 C CNN
+F 1 "+3V3" V 4000 3500 59  0000 L BNN
+F 2 "" H 4100 3700 50  0001 C CNN
+F 3 "" H 4100 3700 50  0001 C CNN
+	1    4100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F03178F
+P 4100 4100
+F 0 "R1" H 4170 4146 50  0000 L CNN
+F 1 "10k" H 4170 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4030 4100 50  0001 C CNN
+F 3 "~" H 4100 4100 50  0001 C CNN
+	1    4100 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3800 4100 3950
+Wire Wire Line
+	4100 5300 4550 5300
+$Comp
+L TM1638Shield1-eagle-import:GND #GND0101
+U 1 1 5F0395B5
+P 4100 6450
+F 0 "#GND0101" H 4100 6450 50  0001 C CNN
+F 1 "GND" H 4000 6350 59  0000 L BNN
+F 2 "" H 4100 6450 50  0001 C CNN
+F 3 "" H 4100 6450 50  0001 C CNN
+	1    4100 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F035E54
+P 4100 6200
+F 0 "C1" H 4200 6250 50  0000 L CNN
+F 1 "1n" H 4200 6150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4138 6050 50  0001 C CNN
+F 3 "~" H 4100 6200 50  0001 C CNN
+	1    4100 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:+3V3 #+3V0102
+U 1 1 5F042940
+P 4400 3700
+F 0 "#+3V0102" H 4400 3700 50  0001 C CNN
+F 1 "+3V3" V 4300 3500 59  0000 L BNN
+F 2 "" H 4400 3700 50  0001 C CNN
+F 3 "" H 4400 3700 50  0001 C CNN
+	1    4400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F042946
+P 4400 4100
+F 0 "R2" H 4470 4146 50  0000 L CNN
+F 1 "10k" H 4470 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4330 4100 50  0001 C CNN
+F 3 "~" H 4400 4100 50  0001 C CNN
+	1    4400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3800 4400 3950
+$Comp
+L TM1638Shield1-eagle-import:GND #GND0102
+U 1 1 5F0472C4
+P 4400 6450
+F 0 "#GND0102" H 4400 6450 50  0001 C CNN
+F 1 "GND" H 4300 6350 59  0000 L BNN
+F 2 "" H 4400 6450 50  0001 C CNN
+F 3 "" H 4400 6450 50  0001 C CNN
+	1    4400 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F0472CA
+P 4400 6200
+F 0 "C2" H 4500 6250 50  0000 L CNN
+F 1 "1n" H 4500 6150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4438 6050 50  0001 C CNN
+F 3 "~" H 4400 6200 50  0001 C CNN
+	1    4400 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TM1638Shield1-eagle-import:+3V3 #+3V0103
+U 1 1 5F058B2C
+P 4700 3700
+F 0 "#+3V0103" H 4700 3700 50  0001 C CNN
+F 1 "+3V3" V 4600 3500 59  0000 L BNN
+F 2 "" H 4700 3700 50  0001 C CNN
+F 3 "" H 4700 3700 50  0001 C CNN
+	1    4700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F058B32
+P 4700 4100
+F 0 "R3" H 4770 4146 50  0000 L CNN
+F 1 "10k" H 4770 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4630 4100 50  0001 C CNN
+F 3 "~" H 4700 4100 50  0001 C CNN
+	1    4700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3800 4700 3950
+$Comp
+L TM1638Shield1-eagle-import:GND #GND0103
+U 1 1 5F063F81
+P 4700 6450
+F 0 "#GND0103" H 4700 6450 50  0001 C CNN
+F 1 "GND" H 4600 6350 59  0000 L BNN
+F 2 "" H 4700 6450 50  0001 C CNN
+F 3 "" H 4700 6450 50  0001 C CNN
+	1    4700 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F063F87
+P 4700 6200
+F 0 "C3" H 4800 6250 50  0000 L CNN
+F 1 "1n" H 4800 6150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4738 6050 50  0001 C CNN
+F 3 "~" H 4700 6200 50  0001 C CNN
+	1    4700 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5700 4700 6050
+$Comp
+L TM1638Shield1-eagle-import:PINHD-1X4 JP1
+U 1 1 5F081ADF
+P 7800 5450
+F 0 "JP1" H 7550 5775 59  0000 L BNN
+F 1 "PINHD-1X4" H 7550 5150 59  0000 L BNN
+F 2 "TM1638Shield1:1X04" H 7800 5450 50  0001 C CNN
+F 3 "" H 7800 5450 50  0001 C CNN
+	1    7800 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 5350 0    50   Input ~ 0
+S10
+Text GLabel 7450 5250 0    50   Input ~ 0
+S9
+Wire Wire Line
+	7450 5250 7700 5250
+Wire Wire Line
+	7450 5350 7700 5350
+Wire Wire Line
+	7450 5450 7700 5450
+Wire Wire Line
+	7450 5550 7700 5550
+Text GLabel 5150 5200 0    50   Input ~ 0
+S9
+Text GLabel 5150 5300 0    50   Input ~ 0
+S10
+Text GLabel 5150 4000 0    50   Input ~ 0
+K1
+Text GLabel 5150 4100 0    50   Input ~ 0
+K2
+Text GLabel 5150 4200 0    50   Input ~ 0
+K3
+$Comp
+L TM1638Shield1-eagle-import:PINHD-1X4 JP4
+U 1 1 5F09337F
+P 7800 6150
+F 0 "JP4" H 7550 6475 59  0000 L BNN
+F 1 "PINHD-1X4" H 7550 5850 59  0000 L BNN
+F 2 "TM1638Shield1:1X04" H 7800 6150 50  0001 C CNN
+F 3 "" H 7800 6150 50  0001 C CNN
+	1    7800 6150
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 5950 0    50   Input ~ 0
+K1
+Text GLabel 7450 6050 0    50   Input ~ 0
+K2
+Wire Wire Line
+	7450 5950 7700 5950
+Wire Wire Line
+	7450 6050 7700 6050
+Wire Wire Line
+	7450 6150 7700 6150
+Wire Wire Line
+	7450 6250 7700 6250
+Text GLabel 7450 6150 0    50   Input ~ 0
+K3
+Wire Wire Line
+	2650 2800 2850 2800
+Wire Wire Line
+	2650 3000 2850 3000
+Wire Wire Line
+	2650 3200 2850 3200
+Wire Wire Line
+	5150 5600 4400 5600
+Connection ~ 4400 5600
+Wire Wire Line
+	4400 5600 4400 6050
+Wire Wire Line
+	2650 5500 4400 5500
+$Comp
+L TM1638Shield1-eagle-import:GND #GND0104
+U 1 1 5F131EDD
+P 6600 5950
+F 0 "#GND0104" H 6600 5950 50  0001 C CNN
+F 1 "GND" H 6500 5850 59  0000 L BNN
+F 2 "" H 6600 5950 50  0001 C CNN
+F 3 "" H 6600 5950 50  0001 C CNN
+	1    6600 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5600 6600 5600
+$Comp
+L TM1638Shield1-eagle-import:+3V3 #+3V0104
+U 1 1 5F141AF7
+P 6600 4900
+F 0 "#+3V0104" H 6600 4900 50  0001 C CNN
+F 1 "+3V3" V 6500 4700 59  0000 L BNN
+F 2 "" H 6600 4900 50  0001 C CNN
+F 3 "" H 6600 4900 50  0001 C CNN
+	1    6600 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5300 6600 5300
+Wire Wire Line
+	6600 5000 6600 5300
+Wire Wire Line
+	6450 5400 6600 5400
+Wire Wire Line
+	6600 5400 6600 5300
+Connection ~ 6600 5300
+$Comp
+L TM1638Shield1-eagle-import:+3V3 #+3V0105
+U 1 1 5F155348
+P 7550 2550
+F 0 "#+3V0105" H 7550 2550 50  0001 C CNN
+F 1 "+3V3" V 7450 2350 59  0000 L BNN
+F 2 "" H 7550 2550 50  0001 C CNN
+F 3 "" H 7550 2550 50  0001 C CNN
+	1    7550 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2900 7550 2900
+Wire Wire Line
+	7550 2650 7550 2900
+Wire Wire Line
+	7450 3700 7700 3700
+Text GLabel 7450 3700 0    50   Input ~ 0
+A
+Wire Wire Line
+	6600 5600 6600 5700
+Connection ~ 6600 5700
+Wire Wire Line
+	6600 5700 6600 5850
+Connection ~ 4400 5500
+Wire Wire Line
+	4400 5500 4400 5600
+Wire Wire Line
+	4400 4250 4400 5500
+Wire Wire Line
+	2650 5700 4700 5700
+Connection ~ 4100 5300
+Wire Wire Line
+	4100 5300 4100 6050
+Wire Wire Line
+	4550 5300 4550 5500
+Wire Wire Line
+	4100 4250 4100 5300
+Wire Wire Line
+	2650 5300 4100 5300
+Connection ~ 4700 5700
+Wire Wire Line
+	4700 5700 5150 5700
+Wire Wire Line
+	4700 4250 4700 5700
+Wire Wire Line
+	4550 5500 5150 5500
+Text Label 1450 4800 0    50   ~ 0
+D0-o
+Text Label 1450 5000 0    50   ~ 0
+D1-o
+Text Label 1450 5200 0    50   ~ 0
+D2-o
+Text Label 1450 5400 0    50   ~ 0
+D3-o
+Wire Wire Line
+	2400 1100 2000 1100
+Wire Wire Line
+	2000 1300 2150 1300
+Wire Wire Line
+	2150 1300 2150 1000
+Wire Wire Line
+	7550 3000 7950 3000
+Text GLabel 7450 5450 0    50   Input ~ 0
+D0-o
+Text GLabel 7450 5550 0    50   Input ~ 0
+D1-o
+$Comp
+L Device:C C4
+U 1 1 5F18557E
+P 6850 5500
+F 0 "C4" H 6950 5550 50  0000 L CNN
+F 1 "100n" H 6950 5450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6888 5350 50  0001 C CNN
+F 3 "~" H 6850 5500 50  0001 C CNN
+	1    6850 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5650 6850 5700
+Wire Wire Line
+	6850 5700 6600 5700
+Wire Wire Line
+	6600 5300 6850 5300
+Wire Wire Line
+	6850 5300 6850 5350
+Wire Wire Line
+	6400 5700 6600 5700
+$EndSCHEMATC
